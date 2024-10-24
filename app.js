@@ -38,17 +38,12 @@
 // console.log(result);
 
 
-
-
-
-// assignment no: 4
-
 let students = [
-    { id: '1589', name: 'alex', score: '88', favoriteSubject: 'math' },
-    { id: '1590', name: 'rio', score: '62', favoriteSubject: 'bio' },
-    { id: '1591', name: 'paul', score: '84', favoriteSubject: 'chemistry' },
-    { id: '1592', name: 'kalix', score: '91', favoriteSubject: 'english' },
-    { id: '1593', name: 'jason', score: '56', favoriteSubject: 'physics' },
+    { id: '1589', name: 'alex', score: '88', Subject: 'math' },
+    { id: '1590', name: 'rio', score: '62', Subject: 'math'},
+    { id: '1591', name: 'paul', score: '84', Subject: 'math' },
+    { id: '1592', name: 'kalix', score: '91', Subject: 'math' },
+    { id: '1593', name: 'jason', score: '56', Subject: 'math' }
 ]
 let updatedObject = students.map((studentInfo) => {
     return { ...studentInfo, role: 'student' };
