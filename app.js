@@ -36,3 +36,28 @@
 // let remainingPlates = platesPerPerson
 // let result = `${remainingPlates} plates available`
 // console.log(result);
+
+
+
+
+
+// assignment no: 4
+
+let students = [
+    { id: '1589', name: 'alex', score: '88', favoriteSubject: 'math' },
+    { id: '1590', name: 'rio', score: '62', favoriteSubject: 'bio' },
+    { id: '1591', name: 'paul', score: '84', favoriteSubject: 'chemistry' },
+    { id: '1592', name: 'kalix', score: '91', favoriteSubject: 'english' },
+    { id: '1593', name: 'jason', score: '56', favoriteSubject: 'physics' },
+]
+let updatedObject = students.map((studentInfo) => {
+    return { ...studentInfo, role: 'student' };
+}).filter((studentScore) => {
+    if (studentScore >= 80) {
+        return studentScore;
+    }
+})
+let findingId = students.find((findingId) => {
+    return findingId.id == 1591
+})
+console.log(findingId);
